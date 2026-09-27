@@ -1,0 +1,10 @@
+{
+  "description": "Showcases a UI/UX designer's premium portfolio with case studies, design process, and contact options to attract clients and highlight expertise.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

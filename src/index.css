@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+:root {
+  --bg: #0B0A10;
+  --bg-2: #111019;
+  --bg-3: #16141f;
+  --surface: #1a1826;
+  --surface-2: #211e2e;
+  --border: rgba(255, 255, 255, 0.065);
+  --border-accent: rgba(138, 79, 255, 0.25);
+  --violet: hsl(263, 82%, 62%);
+  --violet-bright: hsl(263, 90%, 68%);
+  --violet-dim: hsla(263, 82%, 62%, 0.12);
+  --violet-glow: hsla(263, 82%, 62%, 0.06);
+  --text: #ECE8F5;
+  --text-muted: #7A7590;
+  --text-faint: #4a4660;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::selection {
+  background: hsla(263, 82%, 62%, 0.25);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
